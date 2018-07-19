@@ -156,7 +156,7 @@ Clients should not be forced to implement interfaces they don't use. Instead of 
 based on groups of methods, each one serving one sub module.
 
 Problem
-	Interface ISavingAccount  
+	 Interface ISavingAccount  
 	 {  
 	    //Other method and property and code  
 	    bool Withdrwal(decimal amount);  
@@ -219,10 +219,10 @@ Problem
 	 AccountManager.WidhdrawFromAccount(new FixDepositSavingAccount());
 
 Solution
-	 Interface ISavingAccount  
-	 {
+		 Interface ISavingAccount  
+		 {
 
-	 }  
+		 }  
 
 	 Public Class SavingAccountWithWithdrawal : ISavingAccount  
 	 {  
@@ -334,6 +334,7 @@ Still Notification class depends on Email class. Now, we can use dependency inje
 There are 3 types to DI, Constructor injection, Property injection and method injection.
 
 Constructor Injection
+	
 	public class Notification
 	 {
 	     private IMessenger _iMessenger;
@@ -348,6 +349,7 @@ Constructor Injection
 	 }
 
 Property Injection
+	
 	public class Notification
 	 {
 	     private IMessenger _iMessenger;
