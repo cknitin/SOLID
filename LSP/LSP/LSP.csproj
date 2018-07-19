@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E1666EB9-33C1-4A01-85F1-FF9C412FE959}</ProjectGuid>
+    <ProjectGuid>{6984339F-A8E2-4A78-82AC-19A66F603012}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SOLID</RootNamespace>
-    <AssemblyName>SOLID</AssemblyName>
+    <RootNamespace>LSP</RootNamespace>
+    <AssemblyName>LSP</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnmanageCode\UnmanageCode.csproj">
+      <Project>{4ba0238f-c887-4eb5-905d-714c37a4f52b}</Project>
+      <Name>UnmanageCode</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
