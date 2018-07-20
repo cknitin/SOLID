@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6984339F-A8E2-4A78-82AC-19A66F603012}</ProjectGuid>
+    <ProjectGuid>{A1147F32-E891-4419-A6C3-5850753371C1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LSP</RootNamespace>
-    <AssemblyName>LSP</AssemblyName>
+    <RootNamespace>DIP_Problem</RootNamespace>
+    <AssemblyName>DIP_Problem</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,18 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Chore.cs" />
+    <Compile Include="Emailer.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UnmanageCode\UnmanageCode.csproj">
-      <Project>{4ba0238f-c887-4eb5-905d-714c37a4f52b}</Project>
-      <Name>UnmanageCode</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6984339F-A8E2-4A78-82AC-19A66F603012}</ProjectGuid>
+    <ProjectGuid>{E5C9C21D-0B0B-470C-9B6E-97E4128C1A11}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LSP</RootNamespace>
-    <AssemblyName>LSP</AssemblyName>
+    <RootNamespace>DIP_Solution</RootNamespace>
+    <AssemblyName>DIP_Solution</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,18 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Chore.cs" />
+    <Compile Include="Emailer.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="IChore.cs" />
+    <Compile Include="IMessageSender.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="IPerson.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMSSender.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UnmanageCode\UnmanageCode.csproj">
-      <Project>{4ba0238f-c887-4eb5-905d-714c37a4f52b}</Project>
-      <Name>UnmanageCode</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
