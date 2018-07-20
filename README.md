@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿# SOLID
+=======
+# SOLID
+>>>>>>> 3a59b78b5f461385840a00e173e705ce47af4731
 Set of principle given by Robert.C.Martin.
 Allows building SOLID software system.
 SOLID principles are related with the design and maintenance of software system
@@ -29,6 +33,7 @@ Single responsibility state that a class should have one, and only one, reason t
 
 	Solution#
 	 public class Employee
+<<<<<<< HEAD
 	 {
 	       public int Employee_Id { get; set; }
 	       public string Employee_Name { get; set; }
@@ -48,6 +53,27 @@ Single responsibility state that a class should have one, and only one, reason t
 	       }
 	 }
 
+=======
+	 {
+	       public int Employee_Id { get; set; }
+	       public string Employee_Name { get; set; }
+
+	       public bool InsertIntoEmployeeTable(Employee em)
+	       {
+		    // Write your code here
+		  return true;
+	       }
+	 }
+
+	 public class ReportGeneration
+	 {
+	       public void GenerateReport(Employee em)
+	       {
+		    // Report reneration with employee data.
+	       }
+	 }
+
+>>>>>>> 3a59b78b5f461385840a00e173e705ce47af4731
 # OCP (Open-Closed Principle)</h1>
 Open close principle state that a software module/class is open for extension and closed for modification
 	  public class ReportGeneration
@@ -217,6 +243,7 @@ Problem
 	 AccountManager.WidhdrawFromAccount(new SalarySavingAccount());  
 	 //throws exception as withdrawal is not supported  
 	 AccountManager.WidhdrawFromAccount(new FixDepositSavingAccount());
+<<<<<<< HEAD
 
 Solution
 		 Interface ISavingAccount  
@@ -270,6 +297,61 @@ Solution
 	 //compiler gives error   
 	 AccountManager.WidhdrawFromAccount(new FixDepositSavingAccount());
 
+=======
+
+Solution
+		 Interface ISavingAccount  
+		 {
+
+		 }  
+
+	 Public Class SavingAccountWithWithdrawal : ISavingAccount  
+	 {  
+	     Public virtual bool Withdrwal () {}  
+	 }  
+
+	 Public Class SavingAccountWithoutWithdrawal : ISavingAccount  
+	 {  
+
+	 }  
+
+	 Public Class RegularSavingAccount : SavingAccountWithWithdrawal  
+	 {   
+	   Public bool Withdrwal ()  
+	   { 
+	      //implementation  
+	   }  
+	 }  
+
+	 Public Class SalarySavingAccount : SavingAccountWithWithdrawal  
+	 {   
+	   Public bool Withdrwal ()  
+	   {//implementation  
+	   }  
+	 }  
+
+	 Public Class FixDepositSavingAccount : SavingAccountWithoutWithdrawal  
+	 {  
+
+	 }
+
+	 Public class AccountManager  
+	 {  
+
+	    Public bool WithdrawFromAccount(SavingAccountWithWithdrawal account)  
+	    {  
+	       account.Withdraw(amount);  
+	    }  
+	 }
+
+	 //works ok  
+	 AccountManager.WidhdrawFromAccount(new RegularSavingAccount());  
+	 //works ok  
+	 AccountManager.WidhdrawFromAccount(new SalarySavingAccount());  
+	 //compiler gives error   
+	 AccountManager.WidhdrawFromAccount(new FixDepositSavingAccount());
+
+>>>>>>> 3a59b78b5f461385840a00e173e705ce47af4731
 #DIP (Dependency Injection/Inversion)</h1>
 High-level modules/classes should not depend upon low-level modules/classes. Both should depend upon abstractions. Secondly,
 abstractions should not depend upon details. Details should depend upon abstractions.
@@ -383,4 +465,8 @@ Method Injection
 	 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3a59b78b5f461385840a00e173e705ce47af4731
 
