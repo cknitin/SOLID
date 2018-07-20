@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LSP
+namespace LSP_With_Solution
 {
-    class Class1
+    public interface IManager : IEmployee
     {
+        void GeneratePerformanceReview();
     }
 }

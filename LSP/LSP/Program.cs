@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnmanageCode;
 
-namespace LSP
+namespace LSP_Problem
 {
     class Program
     {

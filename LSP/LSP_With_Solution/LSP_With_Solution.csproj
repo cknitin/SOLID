@@ -42,17 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseEmployee.cs" />
+    <Compile Include="CEO.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="IEmployee.cs" />
+    <Compile Include="IManaged.cs" />
+    <Compile Include="IManager.cs" />
+    <Compile Include="Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LSPSolution\LSPSolution.csproj">
-      <Project>{c181d451-f5ff-4f5e-87bd-1b23e794ede4}</Project>
-      <Name>LSPSolution</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

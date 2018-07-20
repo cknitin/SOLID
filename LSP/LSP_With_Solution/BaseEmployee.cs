@@ -4,25 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnmanageCode
+namespace LSP_With_Solution
 {
-    public class Employee
+    public class BaseEmployee : IEmployee 
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public Employee Manager { get; set; }
         public decimal Salary { get; set; }
-
-
-        public virtual void ManagerAssign(Employee manager)
-        {
-            this.Manager = manager;
-        }
 
         public virtual void CalculateSalary(int rank)
         {
             decimal baseSalary = 12.50M;
-            Salary = baseSalary + (rank * 2); 
+            Salary = baseSalary + (rank * 2);
         }
     }
 }
