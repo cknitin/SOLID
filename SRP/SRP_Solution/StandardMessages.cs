@@ -15,6 +15,7 @@ namespace SRP_Solution
 
         public static void EndApplication()
         {
+            Console.WriteLine("Press any key to continue");
             Console.ReadLine();
         }
 
