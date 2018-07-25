@@ -33,13 +33,11 @@ namespace DIP_Solution
         public void CompletedChore()
         {
             IsCompleted = true;
-            Logger log = new Logger();
-            log.log($"Completed {ChoreName}");
+
+            logger.log($"Completed {ChoreName}");
 
             messageSender.SendMessage(Owner, $"The chore {ChoreName} complete.");    
         }
 
     }
-
-    
 }

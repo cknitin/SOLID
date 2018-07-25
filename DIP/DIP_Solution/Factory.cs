@@ -18,7 +18,6 @@ namespace DIP_Solution
             return new Chore(new Logger(), new SMSSender());
         }
 
-
         public static ILogger CreateLogger()
         {
             return new Logger();

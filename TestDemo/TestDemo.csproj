@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1B64854A-935F-42E9-A67A-B390A02123BF}</ProjectGuid>
+    <ProjectGuid>{0AF5B8AC-D464-4CD3-AC26-37B8B6D7CAA8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OCP_Problem_UI</RootNamespace>
-    <AssemblyName>OCP_Problem_UI</AssemblyName>
+    <RootNamespace>TestDemo</RootNamespace>
+    <AssemblyName>TestDemo</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,12 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OCP_Problem_Library\OCP_Problem_Library.csproj">
-      <Project>{19a85564-0aec-495d-a721-1e9e5a1f80e8}</Project>
-      <Name>OCP_Problem_Library</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
