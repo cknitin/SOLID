@@ -87,6 +87,7 @@ Open close principle state that a software module/class is open for extension an
 	  }
 
 Solution#
+
 	public class IReportGeneration
 	{
 	    public virtual void GenerateReport(Employee em)
