@@ -11,6 +11,7 @@ Easy to explain</p>
 
 # SRP (Single Responsibility Principle)
 Single responsibility state that a class should have one, and only one, reason to change.
+
 	 public class Employee
 	 {
 	     public int Employee_Id { get; set; }
