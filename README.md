@@ -177,6 +177,7 @@ Clients should not be forced to implement interfaces they don't use. Instead of 
 based on groups of methods, each one serving one sub module.
 
 Problem
+
 	 Interface ISavingAccount  
 	 {  
 	    //Other method and property and code  
@@ -240,10 +241,11 @@ Problem
 	 AccountManager.WidhdrawFromAccount(new FixDepositSavingAccount());
 
 Solution
-		 Interface ISavingAccount  
-		 {
 
-		 }  
+	Interface ISavingAccount  
+	{
+
+	}  
 
 	 Public Class SavingAccountWithWithdrawal : ISavingAccount  
 	 {  
@@ -292,10 +294,11 @@ Solution
 	 AccountManager.WidhdrawFromAccount(new FixDepositSavingAccount());
 
 Solution
-		 Interface ISavingAccount  
-		 {
 
-		 }  
+	 Interface ISavingAccount  
+	 {
+
+	 }  
 
 	 Public Class SavingAccountWithWithdrawal : ISavingAccount  
 	 {  
