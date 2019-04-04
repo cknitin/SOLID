@@ -69,6 +69,7 @@ Single responsibility state that a class should have one, and only one, reason t
 
 # OCP (Open-Closed Principle)</h1>
 Open close principle state that a software module/class is open for extension and closed for modification
+	  
 	  public class ReportGeneration
 	  {
 	     public void GenerateReport(Employee em)
